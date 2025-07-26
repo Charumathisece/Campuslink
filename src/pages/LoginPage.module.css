@@ -1,0 +1,94 @@
+/* LoginPage.module.css - Modern, attractive login page */
+
+.loginWrapper {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #e0e7ff 0%, #f8fafc 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.loginHeader {
+  padding: 2.5rem 0 1.5rem 0;
+  text-align: center;
+  background: linear-gradient(90deg, #6366f1 60%, #60a5fa 100%);
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  border-radius: 0 0 32px 32px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+}
+.loginSubHeader {
+  text-align: center;
+  color: #6366f1;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-top: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.loginCardContainer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 0 auto;
+  max-width: 700px;
+  width: 100%;
+}
+
+.loginCard {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(99,102,241,0.10);
+  border: 1.5px solid #c7d2fe;
+  padding: 2.5rem 2rem 2rem 2rem;
+  min-width: 260px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+.loginCard:hover {
+  border: 2px solid #6366f1;
+  box-shadow: 0 8px 32px 0 rgba(99,102,241,0.13);
+}
+
+@media (max-width: 900px) {
+  .loginCardContainer {
+    gap: 1.2rem;
+    max-width: 98vw;
+  }
+  .loginCard {
+    min-width: 180px;
+    min-height: 220px;
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+  }
+  .loginHeader {
+    font-size: 1.5rem;
+    border-radius: 0 0 18px 18px;
+  }
+}
+@media (max-width: 600px) {
+  .loginHeader {
+    font-size: 1.1rem;
+    border-radius: 0 0 8px 8px;
+    padding: 1.2rem 0 0.7rem 0;
+  }
+  .loginSubHeader {
+    font-size: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 1.2rem;
+  }
+  .loginCardContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .loginCard {
+    min-width: 90vw;
+    min-height: 120px;
+    border-radius: 8px;
+    padding: 0.7rem 0.3rem 0.7rem 0.3rem;
+  }
+}
